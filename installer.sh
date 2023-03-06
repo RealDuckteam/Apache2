@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CYAN='\033[0;36m'
+
 if (( $EUID != 0 )); then
     echo -e "${CYAN}Bitte führen sie dieses Skript als Root aus!"
     exit
@@ -35,3 +37,5 @@ block1(){
         esac
     done
 }
+
+block1
